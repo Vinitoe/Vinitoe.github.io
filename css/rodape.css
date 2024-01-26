@@ -1,0 +1,48 @@
+.backfooter {
+  background-color: #0b3a39;
+  background-size: 100%;
+}
+footer {
+  background-color: #0b3a39;
+  background-size: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  color: rgb(255, 255, 255);
+  justify-content: space-around;
+  padding: 100px;
+  border: 0px;
+  font-size: 20px;
+  position: relative;
+
+}
+footer::after {
+  content: " ";
+  position: absolute;
+  background-color: #57c5b6;
+  width: 19px;
+  height: 147px;
+  top: -70px ;
+  left: 20px;
+}
+footer::before {
+  content: " ";
+  position: absolute;
+  background-color: #ffffff;
+  width: 19px;
+  height: 147px;
+  top: -20px ;
+  left: 39px;
+}
+@media (max-width: 800px) {
+  footer {
+    margin: 0 0;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: block;
+    gap: 0px;
+  
+  }
+
+}

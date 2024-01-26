@@ -1,0 +1,103 @@
+.main {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  place-content: space-between;
+}
+.minhafoto {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.sobremin {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: space-between;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  text-align: left;
+  gap: 0px;
+}
+h1 {
+  color: black;
+  font-size: 3rem;
+  font-family: Oswald;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #b2b2b2;
+}
+h3 {
+  color: black;
+  font-size: 2rem;
+  font-family: Oswald;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.sobremin-info {
+  display: inline;
+  margin-right: 0.5rem;
+  margin-top: 0px;
+}
+
+.negrito {
+  font-weight: 700;
+}
+.underline {
+  text-decoration: underline;
+}
+.retangulolateral {
+  max-height: 438px;
+  justify-self: center;
+}
+
+@media (max-width: 800px) {
+  .main {
+    display: block;
+    place-content: center;
+    margin-top: 0px;
+    padding: 0px 30px;
+  }
+  h1 {
+    color: black;
+    font-size: 2rem;
+  }
+  .sobremin {
+    display: block;
+    grid-column: 1fr 1fr;
+  }
+  .retangulolateral {
+    display: none;
+  }
+
+  .minhafoto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px;
+    gap: 30px;
+  }
+  .retangulo {
+    height: 102px;
+    align-self: center;
+    padding: 30px;
+    border-radius: 0px 70px;
+  }
+}
